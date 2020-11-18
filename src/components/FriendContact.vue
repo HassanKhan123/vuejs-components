@@ -1,6 +1,6 @@
 <template>
   <li>
-    <h2>{{ name }} {{ isFavourite === "1" ? "- (Favourite)" : "" }}</h2>
+    <h2>{{ name }} {{ isFavourite ? "- (Favourite)" : "" }}</h2>
     <button @click="toggleDetails">
       {{ detailsAreVisible ? "Hide" : "Show" }} Details
     </button>
@@ -28,12 +28,9 @@ export default {
       required: true,
     },
     isFavourite: {
-      type: String,
+      type: Boolean,
       required: false,
-      default: "0",
-      validator: (value) => {
-        return value === "1" || value === "0";
-      },
+      default: false,
     },
   },
   data() {
