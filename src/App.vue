@@ -4,8 +4,17 @@
       <h1>My Friends</h1>
     </header>
     <ul>
-      <friend-contact name="Hassan" email="hassan@gmail.com" phone-number="03243219156"></friend-contact>
-      <friend-contact name="Khan" email="khan@gmail.com" phone-number="03243219156"></friend-contact>
+      <friend-contact
+        name="Hassan"
+        email="hassan@gmail.com"
+        phone-number="03243219156"
+      ></friend-contact>
+      <friend-contact
+        name="Khan"
+        email="khan@gmail.com"
+        phone-number="03243219156"
+        is-favourite="1"
+      ></friend-contact>
     </ul>
   </section>
 </template>
